@@ -1,7 +1,7 @@
 import { createMuiTheme, CssBaseline, Link, makeStyles, ThemeProvider, Typography } from '@material-ui/core'
-import { blue } from '@material-ui/core/colors'
+import { red } from '@material-ui/core/colors'
 import React from 'react'
-import Title from './components/title'
+import Title from '../components/title'
 
 const useStyles = makeStyles({
   root: {
@@ -20,7 +20,7 @@ const App = () => {
     palette: {
       type: 'dark',
       primary: {
-        main: blue[500],
+        main: red[500],
       },
     },
   })
