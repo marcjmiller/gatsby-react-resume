@@ -1,7 +1,7 @@
 import React from 'react'
 import Social from '../components/social'
 import Head from '../components/head'
-import { RightArrow } from '../img/arrow'
+import { RightArrow } from '../img/icons/arrow'
 
 const App = () => {
   return (

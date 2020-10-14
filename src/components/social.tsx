@@ -1,7 +1,7 @@
 import React from 'react'
-import Email from '../img/email'
-import GitHub from '../img/gitHub'
-import LinkedIn from '../img/linkedIn'
+import Email from '../img/icons/email'
+import GitHub from '../img/icons/gitHub'
+import LinkedIn from '../img/icons/linkedIn'
 
 const Social = () => {
   return (

@@ -1,9 +1,9 @@
 import React from 'react'
 import Head from '../components/head'
-import { LeftArrow, RightArrow } from '../img/arrow'
-import Email from '../img/email'
-import GitHub from '../img/gitHub'
-import LinkedIn from '../img/linkedIn'
+import { LeftArrow, RightArrow } from '../img/icons/arrow'
+import Email from '../img/icons/email'
+import GitHub from '../img/icons/gitHub'
+import LinkedIn from '../img/icons/linkedIn'
 
 const Contact = () => {
   return (
