@@ -24,8 +24,25 @@
   @apply justify-between;
   @apply items-center;
   @apply text-white;
-  @apply bg-gray-900;
+  @apply bg-gray-700;
   @apply font-sans;
+}
+
+.project-tag {
+  @apply inline-block;
+  @apply bg-gray-200;
+  @apply rounded-full;
+  @apply px-3;
+  @apply py-1;
+  @apply text-sm;
+  @apply font-semibold;
+  @apply text-gray-700;
+  @apply mr-2;
+  @apply mb-2;;
+}
+
+.project-tag:hover {
+  @apply bg-blue-200;
 }
 
 h1 {
