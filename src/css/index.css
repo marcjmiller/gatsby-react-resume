@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+
+.sidebar {
+  @apply p-0;
+  @apply h-full;
+  @apply flex;
+  @apply flex-col;
+  @apply justify-center;
+  @apply justify-items-center;
+  @apply opacity-25;
+}
+
+.sidebar:hover {
+  @apply opacity-75;
+}
+
+.content {
+  @apply flex;
+  @apply h-screen;
+  @apply w-screen;
+  @apply flex-row;
+  @apply justify-between;
+  @apply items-center;
+  @apply text-white;
+  @apply bg-gray-900;
+}
+
+@tailwind utilities;
+
+h1 {
+  @apply text-6xl;
+}
+h2 {
+  @apply text-5xl;
+}
+h3 {
+  @apply text-4xl;
+}
+h4 {
+  @apply text-3xl;
+}
+
+h5 {
+  @apply text-xl;
+}
+
+a {
+  @apply text-red-500;
+}
+
+a:visited {
+  @apply text-red-500;
+}
+
+a:hover {
+  @apply text-red-400;
+}
