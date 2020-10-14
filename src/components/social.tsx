@@ -5,7 +5,7 @@ import LinkedIn from '../img/linkedIn'
 
 const Social = () => {
   return (
-    <div className={'flex-col slide-left'}>
+    <div className={'flex-col'}>
       <div className={'flex flex-col items-center'}>
         <LinkedIn />
         <GitHub />

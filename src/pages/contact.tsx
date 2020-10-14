@@ -1,5 +1,5 @@
 import React from 'react'
-import Head from '../components/title'
+import Head from '../components/head'
 import { LeftArrow, RightArrow } from '../img/arrow'
 import Email from '../img/email'
 import GitHub from '../img/gitHub'

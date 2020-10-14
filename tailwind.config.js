@@ -10,9 +10,6 @@ module.exports = {
   ],
   theme: {
     extend: {},
-    fontFamily: {
-      display: ['Roboto', 'sans-serif'],
-    },
   },
   variants: {
     opacity: ['hover']
