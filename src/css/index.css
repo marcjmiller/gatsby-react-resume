@@ -30,7 +30,7 @@
 
 .project-tag {
   @apply inline-block;
-  @apply bg-gray-200;
+  @apply bg-gray-300;
   @apply rounded-full;
   @apply px-3;
   @apply py-1;

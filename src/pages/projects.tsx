@@ -8,22 +8,23 @@ interface OwnProps {
   data: {
     allContentfulProject: {
       edges: [
-        node: {
-          title: string
-          repoLink: string
-          tags: string[]
-          description: { description: string }
-          screencap: { file: { url: string } }
+        {
+          node: {
+            title: string
+            repoLink: string
+            tags: string[]
+            description: { description: string }
+            screencap: { file: { url: string } }
+          }
         }
       ]
     }
   }
 }
 
-const Projects: React.FC<OwnProps> = ({data}) => {
-  // const projects = props.data.allContentfulProject.edges
+const Projects: React.FC<OwnProps> = ({ data }) => {
   const projects = data.allContentfulProject.edges
-console.log(projects)
+
   return (
     <>
       <SEO />
@@ -37,14 +38,10 @@ console.log(projects)
           <h1 className={'text-center font-bold p-5'}>Projects</h1>
           <div className={'flex flex-row max-h-full overflow-auto'}>
             {projects.length > 0 &&
-              projects.map((project, id) => {
+              projects.map(project => {
                 return (
                   <ProjectCard
-                    title={project.title}
-                    description={project?.description?.description}
-                    tags={project.tags}
-                    imgSrc={project?.screencap?.file.url}
-                    key={id}
+                    project={project.node}
                   />
                 )
               })}
