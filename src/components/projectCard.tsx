@@ -1,3 +1,4 @@
+import { Link } from 'gatsby'
 import React from 'react'
 
 interface OwnProps {
@@ -21,8 +22,8 @@ const ProjectCard: React.FC<OwnProps> = ({ project }) => {
       <div className={'px-6 py-4'}>
         <div className={'flex flex-row justify-between w-full text-gray-800 font-bold text-xl mb-2'}>
           {project.title ? project.title : 'Title'}
-          <a href={project.repoLink} target={'_blank'} rel={'noopener'}>
-          <div className={'project-tag'}>Github</div></a>
+          <Link to={project.repoLink} target={'_blank'} rel={'noopener'}>
+          <div className={'project-tag'}>Github</div></Link>
         </div>
         <p className={'text-gray-700 text-base'}>
           {project.description?.description ? project.description?.description : 'Description'}

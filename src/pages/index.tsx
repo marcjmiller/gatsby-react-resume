@@ -2,6 +2,7 @@ import React from 'react'
 import Social from '../components/social'
 import SEO from '../components/seo'
 import { RightArrow } from '../img/icons/arrow'
+import { Link } from 'gatsby'
 
 const App = () => {
   return (
@@ -14,9 +15,9 @@ const App = () => {
         <h1 className={'text-center font-semibold p-4'}>Hi, I'm Marc.</h1>
         <h4 className={'text-center font-normal'}>
           I'm a full stack developer writing code for{' '}
-          <a href={'https://www.dgs1sdt.com'} target={'_blank'} rel={'noopener'}>
+          <Link to={'https://www.dgs1sdt.com'} target={'_blank'} rel={'noopener'}>
             Red 5
-          </a>
+          </Link>
           .
         </h4>
         <h5 className={'text-center font-light'}>We're a passionate group of Airmen solving problems with software.</h5>

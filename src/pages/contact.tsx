@@ -1,3 +1,4 @@
+import { Link } from 'gatsby'
 import React from 'react'
 import SEO from '../components/seo'
 import { LeftArrow, RightArrow } from '../img/icons/arrow'
@@ -11,9 +12,9 @@ const Contact = () => {
       <SEO />
       <div className={'content'}>
         <div className={'sidebar'}>
-          <a href={'/projects/'}>
+          <Link to={'/projects/'}>
             <LeftArrow text={'projects'} />
-          </a>
+          </Link>
         </div>
         <div className={'flex flex-col justify-around overflow-hidden'}>
           <h1 className={'font-bold p-5'}>Let's talk</h1>
@@ -24,9 +25,9 @@ const Contact = () => {
           </div>
         </div>
         <div className={'sidebar'}>
-          <a href={'/'}>
+          <Link to={'/'}>
             <RightArrow text={'home'} />
-          </a>
+          </Link>
         </div>
       </div>
     </>

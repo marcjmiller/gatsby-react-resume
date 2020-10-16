@@ -1,4 +1,4 @@
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 import React from 'react'
 import { LeftArrow, RightArrow } from '../img/icons/arrow'
 import SEO from '../components/seo'
@@ -30,27 +30,23 @@ const Projects: React.FC<OwnProps> = ({ data }) => {
       <SEO />
       <div className={'content'}>
         <div className={'sidebar'}>
-          <a href={'/'}>
+          <Link to={'/'}>
             <LeftArrow text={'home'} />
-          </a>
+          </Link>
         </div>
         <div>
           <h1 className={'text-center font-bold p-5'}>Projects</h1>
           <div className={'flex flex-row max-h-full overflow-auto'}>
             {projects.length > 0 &&
               projects.map(project => {
-                return (
-                  <ProjectCard
-                    project={project.node}
-                  />
-                )
+                return <ProjectCard project={project.node} />
               })}
           </div>
         </div>
         <div className={'sidebar'}>
-          <a href={'/contact/'}>
+          <Link to={'/contact/'}>
             <RightArrow text={'contact'} />
-          </a>
+          </Link>
         </div>
       </div>
     </>
